@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Comment from './components/Comment'
 
-class App extends Component() {
+class App extends Component {
 
   /* state={
      comments:[
@@ -36,7 +36,7 @@ class App extends Component() {
     this.state = { comments: [] }
   }
 
-  ComponentDidMount() {
+  componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/comments?_limit=5')
       .then(response => response.json())
       .then(result => this.setState({ comments: result }))//Asignacion del state, para q se pueda mostrar
